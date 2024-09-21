@@ -1,9 +1,19 @@
 {
-  "name": "QuickPark",
+  "name": "quickpark",
   "version": "1.0.0",
   "description": "",
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "apps/*",
+      "libs/*"
+    ]
+  },
   "scripts": {},
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "typescript": "^5.6.2"
+  }
 }
