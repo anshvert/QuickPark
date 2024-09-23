@@ -9,11 +9,18 @@
       "libs/*"
     ]
   },
-  "scripts": {},
+  "scripts": {
+    "build": "pnpm --parallel -r run build",
+    "tsc": "pnpm --parallel -r run tsc",
+    "prepare": "husky install"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "typescript": "^5.6.2"
+  },
+  "devDependencies": {
+    "husky": "^8.0.0"
   }
 }
