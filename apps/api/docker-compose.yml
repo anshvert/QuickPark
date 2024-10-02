@@ -1,0 +1,16 @@
+services:
+  db:
+    container_name: quickpark_db
+    image: postgres
+    restart: on-failure
+    ports:
+      - "2010:5432"
+    environment:
+      POSTGRES_USER:  postgres
+      POSTGRES_DB: postgres
+      POSTGRES_PASSWORD:  password
+    volumes:
+      - db_data_quickpark:/var/lib/postgresql/data
+
+volumes:
+  db_data_quickpark:
